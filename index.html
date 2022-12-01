@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook Clone</title>
+  <link rel="stylesheet" href="css/font5/all.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo-section">
+      <div class="header__logo-icon">
+        <i class="fab fa-facebook"></i>
+      </div>
+      <div class="header__logo-search">
+        <i class="fas fa-search"></i>
+        <input type="text">
+      </div>
+      <div class="header__mobile-button">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+    <div class="header__menu-tabs">
+      <div class="header__menu-tab header__menu-tab--active">
+        <i class="fas fa-home"></i>
+      </div>
+      <div class="header__menu-tab">
+        <i class="fas fa-flag">
+          <div class="header__notification-bubble">
+            3
+          </div>
+        </i>
+      </div>
+      <div class="header__menu-tab">
+        <i class="fas fa-tv">
+          <div class="header__notification-bubble">
+            9+
+          </div>
+        </i>
+      </div>
+      <div class="header__menu-tab">
+        <i class="fas fa-store"></i>
+      </div>
+      <div class="header__menu-tab">
+        <i class="fas fa-users">
+          <div class="header__notification-bubble">
+            5
+          </div>
+        </i>
+      </div>
+    </div>
+    <div class="header__account">
+      <div class="header__actions">
+        <img src="https://randomuser.me/api/portraits/men/52.jpg" class="header__user-img">
+        <span class="header__user-name">Eric Jackman</span>
+        <a href="#" class="header__circle-link">
+          <i class="header__link-icon fas fa-plus"></i>
+        </a>
+        <a href="#" class="header__circle-link mobile">
+          <i class="header__link-icon fas fa-search"></i>
+        </a>
+        <a href="#" class="header__circle-link">
+          <div class="header__notification-link-bubble">8</div>
+          <i class="header__link-icon fab fa-facebook-messenger"></i>
+        </a>
+        <a href="#" class="header__circle-link">
+          <div class="header__notification-link-bubble">16</div>
+          <i class="header__link-icon fas fa-bell"></i>
+        </a>
+        <a href="#" class="header__circle-link">
+          <i class="header__link-icon fas fa-sort-down"></i>
+        </a>
+      </div>
+    </div>
+    <div class="header__mobile-button right">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+  <section class="content-area content-area--feed">
+    <section class="sidenav">
+      <div class="sidenav__item">
+        <img src="https://randomuser.me/api/portraits/men/52.jpg" class="sidenav__item-img">
+        <span class="sidenav__item-title">
+          Eric Jackman
+        </span>
+      </div>
+      <div class="sidenav__item">
+        <div class="sidenav__item-icon">
+          <i class="fas fa-user-friends"></i>
+        </div>
+        <span class="sidenav__item-title">
+          Friends
+        </span>
+      </div>
+      <div class="sidenav__item">
+        <div class="sidenav__item-icon">
+          <i class="fas fa-flag"></i>
+        </div>
+        <span class="sidenav__item-title">
+          Pages
+          <span class="sidenav__item-notification">
+            <div class="sidenav__item-notification-circle"></div>9+ new
+          </span>
+        </span>
+      </div>
+      <div class="sidenav__item">
+        <div class="sidenav__item-icon">
+          <i class="fas fa-users"></i>
+        </div>
+        <span class="sidenav__item-title">
+          Groups
+          <span class="sidenav__item-notification">
+            <div class="sidenav__item-notification-circle"></div>3+ new
+          </span>
+        </span>
+      </div>
+      <div class="sidenav__item">
+        <div class="sidenav__item-icon">
+          <i class="fas fa-store"></i>
+        </div>
+        <span class="sidenav__item-title">
+          Marketplace
+        </span>
+      </div>
+      <div class="sidenav__item">
+        <div class="sidenav__item-icon sidenav__item-icon--circle">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <span class="sidenav__item-title">
+          See More
+        </span>
+      </div>
+      <div class="sidenav__line"></div>
+      <span class="sidenav__heading-title">
+        Your Shortcuts
+      </span>
+      <div class="sidenav__item">
+        <div class="sidenav__item-icon sidenav__item-icon--circle-white">
+          <i class="fas fa-user-friends"></i>
+        </div>
+        <span class="sidenav__item-title">
+          CodingPhase
+        </span>
+      </div>
+      <div class="sidenav__item">
+        <div class="sidenav__item-icon sidenav__item-icon--circle-white">
+          <i class="fas fa-user-friends"></i>
+        </div>
+        <span class="sidenav__item-title">
+          ClickFunnels
+        </span>
+      </div>
+      <div class="sidenav__item">
+        <img
+          src="https://media.cnn.com/api/v1/images/stellar/prod/210104111236-beginner-gaming-pc.jpg?q=x_0,y_0,h_1162,w_2064,c_fill/h_270,w_480"
+          class="sidenav__item-img">
+        <span class="sidenav__item-title">
+          Gaming
+        </span>
+      </div>
+      <div class="sidenav__item">
+        <img
+          src="https://i.guim.co.uk/img/media/e81bc0125b1c4bc950c5515f6c0e454df8b3c7a5/0_555_8368_5019/master/8368.jpg?width=620&quality=85&auto=format&fit=max&s=d37382ce42c5db509ed58fc244e00b68"
+          class="sidenav__item-img">
+        <span class="sidenav__item-title">
+          Cycling Tips
+        </span>
+      </div>
+    </section>
+    <section class="feed">
+      <div class="stories">
+        <div class="stories__video-container">
+          <img class="stories__bg" src="https://randomuser.me/api/portraits/men/52.jpg">
+          <div class="stories__title">
+            <div class="stories__new-btn">
+              <i class="fas fa-plus"></i>
+            </div>
+            Create a Story
+          </div>
+        </div>
+        <div class="stories__video-container stories__video-container--plain">
+          <img class="stories__bg"
+            src="https://media0.giphy.com/media/xCARRssQbzh8VoKpzN/giphy.gif?cid=82a1493bvmvrkymmyg7jbxolxsrtguzoo9a1ovbtj7a43czw&rid=giphy.gif&ct=g">
+          <div class="stories__title">
+            <img class="stories__user" src="https://randomuser.me/api/portraits/women/95.jpg">
+            Cindy Bane
+          </div>
+        </div>
+        <div class="stories__video-container stories__video-container--plain">
+          <img class="stories__bg"
+            src="http://25.media.tumblr.com/9c42b8a29f4c61dd4932a62cf7f04de9/tumblr_mh26d7IViZ1rwf7hjo1_500.gif">
+          <div class="stories__title">
+            <img class="stories__user" src="https://randomuser.me/api/portraits/women/32.jpg">
+            Jennifer Smith
+          </div>
+        </div>
+        <div class="stories__video-container stories__video-container--plain">
+          <img class="stories__bg"
+            src="https://media4.giphy.com/media/0U5Joy7tExxP9HAqNM/giphy.gif?cid=790b7611d76408b19c6671be96afc08643b75fd25c77aea7&rid=giphy.gif&ct=g">
+          <div class="stories__title">
+            <img class="stories__user" src="https://randomuser.me/api/portraits/men/32.jpg">
+            Billy <br>Ray
+          </div>
+        </div>
+        <div class="stories__video-container stories__video-container--plain">
+          <img class="stories__bg" src="https://s4.gifyu.com/images/3d07ddf77619e5eae.gif">
+          <div class="stories__title">
+            <img class="stories__user" src="https://randomuser.me/api/portraits/men/14.jpg">
+            Ryan <br>Brent
+          </div>
+        </div>
+        <div class="stories__video-container stories__video-container--plain">
+          <img class="stories__bg"
+            src="https://media4.giphy.com/media/G0hjJlkJMcNEc/giphy.gif?cid=790b7611391febe91151790b611f65eb8b9144785c8a40c8&rid=giphy.gif&ct=g">
+          <div class="stories__title">
+            <img class="stories__user" src="https://randomuser.me/api/portraits/men/12.jpg">
+            Jake <br>Cyrus
+          </div>
+        </div>
+      </div>
+      <div class="feed__box submitpost">
+        <div class="newpost">
+          <img class="newpost__user-img" src="https://randomuser.me/api/portraits/men/52.jpg">
+          <input type="text" placeholder="What's on your mind, Eric?">
+        </div>
+        <div class="hline"></div>
+        <div class="post-types">
+          <div class="post-types__item">
+            <i class="fas fa-video"></i> <span class="post-types__title">Live Video</span>
+          </div>
+          <div class="post-types__item">
+            <i class="fas fa-photo-video"></i> <span class="post-types__title">Photo/Video</span>
+          </div>
+          <div class="post-types__item">
+            <i class="fas fa-laugh-beam"></i> <span class="post-types__title">Feeling/Activity</span>
+          </div>
+        </div>
+      </div>
+      <div class="feed__box createroom">
+        <div class="createroom__button">
+          <a href="#">
+            <i class="fas fa-video"></i> <span class="createroom__button-title">Create Room</span>
+          </a>
+        </div>
+        <div class="createroom__bubble">
+          <img src="https://randomuser.me/api/portraits/women/14.jpg">
+          <div class="createroom__status-circle"></div>
+        </div>
+        <div class="createroom__bubble">
+          <img src="https://randomuser.me/api/portraits/women/24.jpg">
+          <div class="createroom__status-circle"></div>
+        </div>
+        <div class="createroom__bubble">
+          <img src="https://randomuser.me/api/portraits/men/4.jpg">
+          <div class="createroom__status-circle"></div>
+        </div>
+        <div class="createroom__bubble">
+          <img src="https://randomuser.me/api/portraits/women/54.jpg">
+          <div class="createroom__status-circle"></div>
+        </div>
+        <div class="createroom__bubble">
+          <img src="https://randomuser.me/api/portraits/men/64.jpg">
+          <div class="createroom__status-circle"></div>
+        </div>
+        <div class="createroom__bubble">
+          <img src="https://randomuser.me/api/portraits/men/74.jpg">
+          <div class="createroom__status-circle"></div>
+        </div>
+        <div class="createroom__bubble">
+          <img src="https://randomuser.me/api/portraits/women/84.jpg">
+          <div class="createroom__status-circle"></div>
+        </div>
+        <div class="createroom__bubble">
+          <img src="https://randomuser.me/api/portraits/men/94.jpg">
+          <div class="createroom__status-circle"></div>
+        </div>
+        <div class="createroom__bubble">
+          <img src="https://randomuser.me/api/portraits/men/24.jpg">
+          <div class="createroom__status-circle"></div>
+        </div>
+
+      </div>
+      <div class="feed__box photopost">
+        <div class="photopost__info">
+          <div class="photopost__left">
+            <img class="" src="https://randomuser.me/api/portraits/men/44.jpg">
+            <div class="photopost__details">
+              <span class="photopost__name">Jared Philips</span>
+              <span class="photopost__date">December 17 at 10:45am
+                <i class="fas fa-user-friends"></i>
+              </span>
+            </div>
+          </div>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="photopost__description">
+          Just living the life in the Philippines
+        </div>
+        <div class="photopost__image">
+          <img
+            src="https://img.traveltriangle.com/blog/wp-content/uploads/2020/02/Philippines-In-September-cover_17th-Feb.jpg">
+        </div>
+        <div class="photopost__stats">
+          <div class="photopost__stats-emojis">
+            <div class="emoji-circle emoji-circle--blue">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="emoji-circle emoji-circle--red">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="emoji-circle emoji-circle--yellow">
+              <i class="fas fa-surprise"></i>
+            </div>
+            3.3k
+          </div>
+          <div class="photopost__stats-info">
+            <div class="photopost__stats-comment">
+              <span>788 Comments</span>
+            </div>
+            <div class="photopost__stats-share">
+              <span>73 Shares</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="hline"></div>
+        <div class="photopost__actions">
+          <a href="#" class="photopost__link">
+            <i class="fas fa-thumbs-up"></i> Like
+          </a>
+          <a href="#" class="photopost__link">
+            <i class="fas fa-comment"></i> Comment
+          </a>
+          <a href="#" class="photopost__link">
+            <i class="fas fa-share"></i> Share
+          </a>
+        </div>
+        <div class="hline"></div>
+      </div>
+    </section>
+    <section class="sidenav right">
+      <span class="sidenav__heading-title">
+        Sponsored
+      </span>
+      <div class="sidenav__line"></div>
+      <span class="sidenav__heading-title">
+        Your Pages
+        <i class="fas fa-ellipsis-h"></i>
+      </span>
+      <div class="sidenav__item">
+        <img
+          src="https://media.cnn.com/api/v1/images/stellar/prod/210104111236-beginner-gaming-pc.jpg?q=x_0,y_0,h_1162,w_2064,c_fill/h_270,w_480"
+          class="sidenav__item-img">
+        <span class="sidenav__item-title">
+          Gaming
+        </span>
+      </div>
+      <div class="sidenav__item right">
+        <div class="sidenav__item-icon right">
+          <i class="far fa-comments"></i>
+        </div>
+        <span class="sidenav__item-title right">
+          17 Messages
+        </span>
+      </div>
+      <div class="sidenav__item right">
+        <div class="sidenav__item-icon right">
+          <i class="far fa-bell"></i>
+        </div>
+        <span class="sidenav__item-title right">
+          20+ Notifications
+        </span>
+      </div>
+      <div class="sidenav__item right">
+        <div class="sidenav__item-icon right">
+          <i class="fas fa-bullhorn"></i>
+        </div>
+        <span class="sidenav__item-title right">
+          Create Promotion
+        </span>
+      </div>
+      <div class="sidenav__line"></div>
+      <div class="sidenav__item-friendrequest">
+        <span class="sidenav__heading-title">
+          Friend Requests
+          <a href="#">See All</a>
+        </span>
+        <div class="sidenav__item-friendrequest-details">
+          <div class="sidenav__item-friendrequest-img">
+            <img src="https://randomuser.me/api/portraits/men/30.jpg">
+          </div>
+          <div class="sidenav__item-friendrequest-details">
+            <div class="sidenav__item-friendrequest-detail">
+              <div class="sidenav__item-friendrequest-username">Bryant Medina <span>3w</span></div>
+              <div class="sidenav__item-friendrequest-mutualfriends">6 mutual friends</div>
+              <div class="sidenav__item-friendrequest-buttons">
+                <button class="sidenav__item-friendrequest-button-confirm">Confirm</button>
+                <button class="sidenav__item-friendrequest-button-delete">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidenav__line"></div>
+      <span class="sidenav__heading-title">
+        Birthdays
+      </span>
+      <div class="sidenav__item">
+        <div class="sidenav__item-icon birthday">
+          <i class="fas fa-gift"></i>
+        </div>
+        <p>
+          <span class="sidenav__item-title">
+            Billy Joe's
+          </span> birthday is today.
+        </p>
+      </div>
+      <div class="sidenav__line"></div>
+      </div>
+      <span class="sidenav__heading-title">
+        Contacts
+        <div class="sidenav__icons-right">
+          <i class="fas fa-video"></i>
+          <i class="fas fa-search"></i>
+          <i class="fas fa-ellipsis-h"></i>
+        </div>
+      </span>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/women/6.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Emily Valesquez
+        </span>
+      </div>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/men/6.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Jose Ortiz
+        </span>
+      </div>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/men/8.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Arnold Hudson
+        </span>
+      </div>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/women/8.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Kelly Ramos
+        </span>
+      </div>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/women/20.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Chelsey Green
+        </span>
+      </div>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/men/20.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Mark McFarland
+        </span>
+      </div>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/women/21.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Hannah Chambers
+        </span>
+      </div>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/men/21.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Chris Harper
+        </span>
+      </div>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/women/22.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Maria Valencia
+        </span>
+      </div>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/women/23.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Lauren White
+        </span>
+      </div>
+      <div class="sidenav__item contact">
+        <img src="https://randomuser.me/api/portraits/women/24.jpg" class="sidenav__item-img">
+        <div class="sidenav__status-circle"></div>
+        <span class="sidenav__item-title">
+          Stephanie Ramon
+        </span>
+      </div>
+    </section>
+  </section>
+  <section class="floatingmsg">
+    <div class="floatingmsg__bubble">
+      <img src="https://randomuser.me/api/portraits/women/14.jpg">
+      <div class="floatingmsg__notification">1</div>
+    </div>
+    <div class="floatingmsg__bubble">
+      <img src="https://randomuser.me/api/portraits/women/24.jpg">
+    </div>
+    <div class="floatingmsg__bubble">
+      <img src="https://randomuser.me/api/portraits/women/34.jpg">
+      <div class="floatingmsg__notification">3</div>
+    </div>
+    <div class="floatingmsg__bubble">
+      <img src="https://randomuser.me/api/portraits/men/54.jpg">
+      <div class="floatingmsg__notification">1</div>
+    </div>
+    <div class="floatingmsg__bubble">
+      <img src="https://randomuser.me/api/portraits/men/64.jpg">
+      <div class="floatingmsg__notification">1</div>
+    </div>
+    <div class="floatingmsg__bubble">
+      <i class="fas fa-edit"></i>
+    </div>
+  </section>
+
+</body>
+
+</html>
